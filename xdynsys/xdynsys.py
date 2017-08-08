@@ -33,3 +33,5 @@ def EM_hopf():
         Ydrift = xlambda*Yem[j-1]+omega*Xem[j-1]-Yem[j-1]*Rtemp
         Xem[j] = Xem[j-1] + Dt*Xdrift + sigma*Winc1
         Yem[j] = Yem[j-1] + Dt*Ydrift + sigma*Winc2
+
+    return Xem, Yem
