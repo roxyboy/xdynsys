@@ -2,18 +2,20 @@ import numpy as np
 
 __all__ = ["EM_hopf"]
 
-def EM_hopf():
+def EM_hopf(M=100, N=2**16, xlambda=-1., omega=1, sigma=.5,
+            Xzero=1, Yzero=0, T=10):
     """
     EM  Stochastic Hopf bifurcation
 
     Discretized Brownian path over [0,T] has dt = 2^(-8).
     Euler-Maruyama uses timestep R*dt.
     """
-    np.random.seed(100)
+    np.random.seed(M)
 
-    xlambda = -1.0; omega = 1; sigma = 0.5
-    Xzero = 1; Yzero = 0
-    T=10; N=2**16; dt = float(T)/N
+    # xlambda = -1.0; omega = 1; sigma = 0.5
+    # Xzero = 1; Yzero = 0
+    # T=10; N=2**16;
+    dt = float(T)/N
     t=np.linspace(0,T,N+1)
 
     dW1=np.sqrt(dt)*np.random.randn(1,N)
