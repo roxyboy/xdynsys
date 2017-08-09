@@ -25,10 +25,10 @@ CLASSIFIERS = ["Development Status :: 3 - Alpha",
                "Topic :: Scientific/Engineering"]
 
 # Description should be a one-liner:
-description = "xroms: Python version of functions to utilize the ROMS outputs."
+description = "xdynsys: Python version of functions to utilize the ROMS outputs."
 # Long description will go up on the pypi page
 long_description = """
-xroms
+xdynsys
 ========
 Python version of functions to utilize the Regional Ocean Model outputs.
 License
@@ -40,7 +40,7 @@ All trademarks referenced herein are property of their respective holders.
 Copyright (c) 2017--, Henk Dijkstra, Utrecht University
 """
 
-NAME = "xroms"
+NAME = "xdynsys"
 MAINTAINER = "Takaya Uchida"
 MAINTAINER_EMAIL = "takaya@ldeo.columbia.edu"
 DESCRIPTION = description
